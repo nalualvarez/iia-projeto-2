@@ -7,6 +7,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void LimpaTela(){
+	#ifdef __linux__ 
+    		system("clear");
+	#elif _WIN32
+    		system("cls");
+	#endif
+}
+
 //Funcao especifica para setar as variaveis
 int Formulario(
 	float* temperatura,
@@ -460,7 +468,7 @@ int main(){
 
 	total = pontuacao_saudavel + pontuacao_dengue + pontuacao_zika + pontuacao_chikungunya;
 
-	system("clear");
+	LimpaTela();
 	//printf("Sem diagnóstico exato: %.1f\n", pontuacao_saudavel);
 	//printf("Dengue: %.1f\n", pontuacao_dengue);
 	//printf("Zika: %.1f\n", pontuacao_zika);
