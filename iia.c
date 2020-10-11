@@ -1,3 +1,9 @@
+//Projeto 2
+//Introduacao a Inteligencia artificial
+//Professor Dibio
+//Ana Luísa Salvador Alvarez 160048036
+//Gabriel Rodrigues Diógenes Macedo 150126808 
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -472,3 +478,4 @@ int main(){
 
 	return(0);
 }
+//The_Programmer
